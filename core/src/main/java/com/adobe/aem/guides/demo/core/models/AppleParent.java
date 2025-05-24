@@ -23,7 +23,7 @@ public class AppleParent {
     @ValueMapValue
     private String color;
 
-    @ChildResource(name = "bookdetails") // 👈 IMPORTANT
+    @ChildResource(name = "bookdetails") 
     private List<AppleChild> bookdetails;
 
     public String getText() {
