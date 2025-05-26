@@ -1,1 +1,20 @@
-zxcfhjkl;po98765432qwrtyuil;,jhfcx
+<div data-sly-use.model="com.adobe.aem.guides.demo.core.models.AppleParent">
+
+    ${model.text}<br>
+    ${model.des}<br>
+    ${model.num}<br>
+    ${model.color}<br>
+
+    <div data-sly-list.item="${model.bookdetails}">
+        ${item.bookname}<br>
+        ${item.date}<br>
+        ${item.author}
+         <div data-sly-list.item1="${item.publicationdetails}">
+            ${item1.publicationname}<br>
+            ${item1.publishedyear}<br>
+            ${item1.edition}
+        </div>
+
+    </div>
+
+</div>
