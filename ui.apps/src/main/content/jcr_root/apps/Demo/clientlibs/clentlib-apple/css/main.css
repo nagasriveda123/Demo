@@ -1,0 +1,17 @@
+.demo{
+        font-family: Arial;
+        background-color:steelBlue;
+        margin: 0;
+        padding: 20px;
+    }
+
+.Bookdetails{
+            font-family: Courier New;
+            background-color: beige;
+            border: 2px solidgreen;
+        }
+.Publicationdetails{
+        background-color: red;
+        padding:20px;
+        font-size:30px;
+    }
