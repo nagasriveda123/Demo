@@ -1,0 +1,21 @@
+<div data-sly-include="include.html"></div>
+
+<div data-sly-resource="${'another' @resourceType='Demo/components/another'}"></div>
+
+<div data-sly-set.items="${['HTML','CSS','java','js']}"></div>
+   <ul data-sly-list="${items}">
+   <li>${item}</li>
+   </ul>
+
+
+<div data-sly-template.Action="${ @para1,para2,para3,para4}">
+       <h5>${para1}</h5>
+        <h5>${para2}</h5>
+         <h5>${para3}</h5>
+          <h5>${para4}</h5>
+</div>
+
+<div data-sly-call="${Action @para1='100' , para2='400' , para3='600',para4='800'}"></div>
+
+<p div-sly-text="${properties.jcr:title}">gypsum</p>
+<p ${properties.jcr:title}>  </p>

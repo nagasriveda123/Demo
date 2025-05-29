@@ -101,10 +101,10 @@
                         sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <productname
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                            fieldLabel="Name of the book"
-                                            name="./productname"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Name of the book"
+                                name="./productname"/>
                             <multifield
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
@@ -125,7 +125,6 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
                                             fieldLabel="Manufacturing Date"
                                             name="./manufacturedate"/>
-                                    
                                         <multifield
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
@@ -146,7 +145,6 @@
                                                         sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
                                                         fieldLabel="Expiry year"
                                                         name="./expirydate"/>
-                                                
                                                 </items>
                                             </field>
                                         </multifield>
