@@ -1,9 +1,16 @@
+
+<h2>Tab1</h2>
 <div data-sly-use.model="com.adobe.aem.guides.demo.core.models.AppleParent">
 
     ${model.text}<br>
     ${model.des}<br>
     ${model.num}<br>
     ${model.color}<br>
+    <h3>pageName: ${model.articletitle}</h3>
+    <h3>pagePath: ${model.articlePagePath}</h3>
+    <h3>pageparent : ${model.articlePageParent}</h3>
+    <h3>UserId : ${model.getWebContentNode}</h3>
+
 
     <div data-sly-list.item="${model.bookdetails}">
         ${item.bookname}<br>
@@ -13,6 +20,23 @@
             ${item1.publicationname}<br>
             ${item1.publishedyear}<br>
             ${item1.edition}
+        </div>
+
+    </div>
+
+</div>
+
+<h2>Tab2</h2>
+<div data-sly-use.model1="com.adobe.aem.guides.demo.core.models.AppleParentTab2">
+
+    ${model1.productname}<br>
+
+    <div data-sly-list.item2="${model1.productdetails}">
+        ${item2.source}<br>
+        ${item2.manufacturedate}<br>
+         <div data-sly-list.item3="${item2.companydetails}">
+            ${item3.companyname}<br>
+            ${item3.expirydate}<br>
         </div>
 
     </div>
